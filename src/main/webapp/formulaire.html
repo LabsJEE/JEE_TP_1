@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<title>Formulaire</title>
+    </head>
+    <body>
+	<form action="ServletTraitement" method="post">
+            <label>Nom</label>
+            <input type="text" name="nom"/>
+            <label>Prénom</label>
+            <input type="text" name="prenom"/> 
+            <br/><br/>
+            Homme <input type="radio" value="M" name="sexe" checked/>
+            Femme <input type="radio" value="F" name="sexe"/>
+            <br/><br/>
+            <select name="occ" id="occ"> 
+		<option>*** Choisissez une fonction ***</option>
+		<option value="Étudiant" selected>Étudiant</option>
+		<option value="Ingénieur">Ingénieur</option>
+		<option value="Enseignant">Enseignant</option>
+		<option value="Retraité">Retraité</option>
+		<option value="Autre">Autre</option>
+            </select>
+            <br/><br/>
+            <input type="checkbox" value="Football" name="loisir" />Football
+            <input type="checkbox" value="Vidéo Games" name="loisir"/>Vidéo Games
+            <input type="checkbox" value="Voyage" name="loisir"/>Voyage
+            <br/><br/>
+            <input type="submit" value="Valider"/>
+	</form>
+    </body>
+</html>
